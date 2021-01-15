@@ -3,6 +3,18 @@
 #define WIDTH 800
 #define HEIGHT 600
 
+vector<Vector3> mesh
+{
+	Vector3(0, 0,  1),
+	Vector3(100, 0,  1),
+	Vector3(50,  100,  1),
+	Vector3(-1,  1,  1),
+	Vector3(-1, -1, -1),
+	Vector3(1, -1, -1),
+	Vector3(1,  1, -1),
+	Vector3(-1,  1, -1),
+};
+
 Vector3 mesh[8] = {
 	Vector3(-1, -1,  1),
 	Vector3( 1, -1,  1),
