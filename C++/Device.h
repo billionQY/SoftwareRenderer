@@ -15,7 +15,8 @@ public:
 	void Clear();
 	bool ZTest(const Vector3 &v);
 	bool ZWrite(const Vector3 &v);
-	void Rasterize(const vector<Vector3> &mesh);
+	void Rasterize(vector<Vector3> &mesh);
+	void Scanline(Vector3 &v1, Vector3 &v2, Vector3 &v3, vector<Vector3> &pixels);
 	void SetPixel(const Vector3 &v, const Vector4 &color);
 
 public:
@@ -24,5 +25,3 @@ public:
 	std::vector<Vector4> frameBuffer; // 帧缓冲
 	std::vector<float> depthBuffer; // 深度缓冲
 };
-
-
